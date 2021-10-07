@@ -1,0 +1,154 @@
+body {
+  background: #f6f6f6;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+div.top, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #181818;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+div.top>p, footer>p {
+  color: #f6f6f6;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1.25rem 0;
+}
+
+div.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+div.title>h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+header {
+  background-image: url('assets/header.svg');
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 378px;
+  width: 100%;
+  background: rgba(24, 24, 24, 0.6);
+}
+
+header>div>div.content {
+  padding-left: 2rem;
+  margin-left: 4rem;
+  width: 100%;
+  max-width: 460px;
+  color: #f6f6f6;
+}
+
+header>div>div.content>h2 {
+  font-size: 2rem;
+  line-height: 2.45rem;
+  margin-bottom: 1.15rem;
+  font-weight: bold;
+}
+
+header>div>div.content>p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  font-style: normal;
+}
+
+main {
+  flex: 1 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+div.header {
+  text-align: center;
+  padding: 3.62rem 0;
+}
+
+div.header>h2 {
+  color: #181818;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+div.header>p {
+  color: #474747;
+  line-height: 2.2rem;
+  font-size: 1.15rem;
+}
+
+div.products {
+  max-width: 1440px;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  grid-gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+div.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebe9ea;
+  height: 300px;
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    background-image: url('assets/header_mobile.svg');
+    background-repeat: no-repeat;
+  }
+  header>div>div.content {
+    margin-left: 0;
+  }
+  header>div>div.content>h2 {
+    font-size: 1.8rem;
+    line-height: 2.15rem;
+  }
+  header>div>div.content>p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  div.header>h2 {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+  div.header>p {
+    line-height: 1.8rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  div.products {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 374px));
+  }
+}
